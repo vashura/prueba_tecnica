@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Identifica;
+use App\Http\Controllers\DocumentoController;
+
 
 
 Route::get('/', function () {
@@ -9,3 +11,5 @@ Route::get('/', function () {
 });
 
 Route::get('/identificar', [Identifica::class, 'index']);
+
+Route::resource('Documento', DocumentoController::class);
