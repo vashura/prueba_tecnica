@@ -9,5 +9,5 @@ class Documento extends Model
 {
     use HasFactory;
 
-    protected $fillable =['name','type'];
+    protected $fillable =['name','type','data'];
 }

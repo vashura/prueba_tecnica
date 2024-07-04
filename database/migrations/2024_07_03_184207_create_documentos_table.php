@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string("name",150);
             $table->string("type",15);
             $table->timestamps();
-            
+            $table->binary('data'); 
         });
     }
 
